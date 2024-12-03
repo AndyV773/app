@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/rewards.css">
+</head>
+
+<body class="container">
+    <!-- fixed navbar -->
+    <div id="fixed-nav-div">
+        <div id="add-1-fixed">
+            <a href="marketing.html">Promote your business here</a>
+        </div>
+        <nav id="fixed-nav">
+            <a href="index.html" class="nav-anchors">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p>Deals</p>
+            </a>
+            <a href="spin.html" class="nav-anchors">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <p>Slots</p>
+            </a>
+            <a href="check-in.html" class="nav-anchors">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <p>Check In</p>
+            </a>
+            <a href="market.html" class="nav-anchors">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <p>Market</p>
+            </a>
+        </nav>
+    </div>
+    <!-- /.fixed navbar -->
+    <!-- main -->
+    <main id="main">
+        <!-- header -->
+        <button id="close-button">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+        <div id="logo-container">
+            <div>
+                <h2 id="log-in-logo" class="great-vibes">BlackAdder<i class="fa-solid fa-dragon"></i></h2>
+            </div>
+        </div>
+        <br>
+        <!-- /.header -->
+        <div id="rewards-container">
+            <h1 id="rewards-header">Rewards <i class="fa-solid fa-box-open"></i></h1>
+            <p id="if-no-rewards">No Rewards Currently</p>
+            <ul id="rewards-list">
+                <!-- Dynamically add rewards as list items -->
+            </ul>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <P>
+                Powered By <a id="koinos-anchor" href="http://koinos.io" target="_blank"
+                    rel="noopener noreferrer">Koinos</a>
+            </P>
+        </footer>
+        <!-- /.footer -->
+    </main>
+    <!-- /.main -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="send-div">
+                <span class="close" style="display: block;">&times;</span>
+                <p id="modal-message"></p>
+                <div id="nickname"></div>
+                <div id="confirm-address"></div>
+                <div id="error-message"></div>
+                <input type="text" id="user-input" class="input" placeholder="Address, Nickname or KAP">
+                <div id="buttons-div">
+                    <button id="send">Send</button>
+                    <button id="confirm">Confirm</button>
+                    <button id="cancel" style="display: none;">Cancel</button>
+                </div>
+            </div>
+            <img src="assets/images/loader/Bean Eater.svg" id="loader" style="display: none;" alt="Loading...">
+        </div>
+    </div>
+    <!-- ./The Modal -->
+    <!-- scripts -->
+    <script src="assets/js/kointract/koinos.min.js"></script>
+    <script type="module" src="assets/js/rewards/rewards.js"></script>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/73c0fc54c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

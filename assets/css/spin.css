@@ -1,0 +1,276 @@
+/* --------------------------------------General styles  */
+
+#slot-changer-buttons {
+  display: flex;
+}
+
+#master-slot-div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 1500px;
+}
+
+.slot-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.slot-content.active-slot {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.slot-content.left {
+  transform: translateX(-100%);
+}
+
+.slot-content.right {
+  transform: translateX(100%);
+}
+
+.slot-content.active-slot.left {
+  transform: translateX(0);
+}
+
+.slot-content.active-slot.right {
+  transform: translateX(0);
+}
+
+/* Fading out effect for hidden elements */
+.slot-content.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+
+/* Active button styles */
+.btn--purple.active-button {
+  background-color: #333;
+  border: #333;
+  opacity: 0.5;
+}
+
+/* --------------------------------------Main styles  */
+
+#slot-container-2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+#slot-2-img {
+  background: url("../images/slot/slot-machine/slot-bull-apoc.webp") no-repeat center center/cover;
+  opacity: 0.2;
+  height: 550px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+#slot-container-2>p {
+  font-size: 260%;
+  position: absolute;
+  opacity: 0.6;
+  top: 50px;
+  font-style: italic;
+}
+
+#slot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: url("../images/slot/slot-machine/slot-snake2.jpg") no-repeat center center/cover;
+  height: 60vh;
+  padding-top: 100px;
+}
+
+.slot-machine {
+  overflow: hidden;
+  /* Adjust height according to image size */
+  height: 200px;
+  border-radius: 50%;
+  /* Smooth transition for both in and out */
+  transition: opacity 1.5s ease, opacity 0.1s ease;
+  -moz-transition: opacity 1.5s ease, opacity 0.1s ease;
+  -webkit-transition: opacity 1.5s ease, opacity 0.1s ease;
+  -o-transition: opacity 1.5s ease, opacity 0.1s ease;
+  visibility: hidden;
+}
+
+.slot-machine.visible {
+  /* Make it visible when class is added */
+  visibility: visible;
+  opacity: 1;
+}
+
+.reel {
+  display: flex;
+  flex-direction: column;
+  transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+  -moz-transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+  -webkit-transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+  -o-transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* --------------------------------------Button  */
+
+#spin-button {
+  margin-top: 40px;
+  /* Smooth transition for hover effect */
+  transition: box-shadow 3s;
+}
+
+#spin-button:hover {
+  box-shadow: 0 6px 15px #e60000;
+}
+
+#spin-button:disabled {
+  background-color: gray;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* --------------------------------------Rewards board  */
+
+#rewards-board {
+  background-color: #333;
+  border-radius: 5px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+#rewards-board>h3 {
+  margin: 10px auto 0;
+}
+
+#rewards-board>hr {
+  margin-top: 10px;
+  width: 90%;
+}
+
+#rewards-board-list {
+  width: 90%;
+  margin-top: 5px;
+}
+
+.reward-list {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#rewards-board-list>hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+/* --------------------------------------Animation  */
+
+.pulsating {
+  /* Pulsate animation */
+  animation: pulsate 1.5s infinite;
+}
+
+@keyframes pulsate {
+
+  0%,
+  100% {
+    /* Start and end with white */
+    box-shadow: 0 4px 10px #fff;
+  }
+
+  50% {
+    /* Change to white at the halfway point */
+    box-shadow: 0 4px 10px #ac00e6;
+  }
+}
+
+/* --------------------------------------The Modal  */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 99;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */
+  overflow: hidden;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 100px auto;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 7px;
+  max-width: 400px;
+  width: 60%;
+  height: fit-content;
+  color: #000;
+  box-shadow: 0 4px 10px #ac00e6;
+}
+
+#modal-info {
+  margin: 10px auto;
+  text-align: center;
+}
+
+#modal-heading {
+  font-size: 120%;
+  margin: 0 0 10px 0;
+}
+
+#span-div {
+  margin: 0 0 10px 0;
+}
+
+#modal-button {
+  margin-top: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

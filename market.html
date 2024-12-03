@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/market.css">
+    <link rel="stylesheet" href="assets/css/burger-menu.css">
+</head>
+
+<body class="container">
+    <!-- fixed navbar -->
+    <div id="fixed-nav-div">
+        <div id="add-1-fixed">
+            <a href="marketing.html">Promote your business here</a>
+        </div>
+        <nav id="fixed-nav">
+            <a href="index.html" class="nav-anchors">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p>Deals</p>
+            </a>
+            <a href="spin.html" class="nav-anchors">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <p>Slots</p>
+            </a>
+            <a href="check-in.html" class="nav-anchors">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <p>Check In</p>
+            </a>
+            <a href="market.html" class="nav-anchors">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <p>Market</p>
+            </a>
+        </nav>
+    </div>
+    <!-- /.fixed navbar -->
+    <!-- main -->
+    <main id="main">
+        <!-- top menu -->
+        <div id="top-menu">
+            <a href="" id="tag-credits">
+                <i class="fa-solid fa-apple-whole"></i>
+                <span id="credits-input"></span>
+            </a>
+            <a href="" id="notification-button">
+                <i class="fa-regular fa-bell"></i>
+            </a>
+            <div id="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- /.top menu -->
+        <!-- header -->
+        <div id="logo-container">
+            <div id="logo">
+                <h2 id="black-logo" class="great-vibes">Black<i class="fa-solid fa-dragon"></i></h2>
+                <h2 id="adder-logo" class="great-vibes">Adder</h2>
+            </div>
+        </div>
+        <div id="add-2"><a href="marketing.html">Promote your business here</a></div>
+        <br>
+        <!-- /.header -->
+        <!-- main section -->
+        <!-- koinos price -->
+        <div id="koinos-div" class="price">
+            <div>Koinos</div>
+            <div id="koinos-price">....</div>
+            <div class="volume">
+                <span id="koinos-arrow" class="arrow"></span>
+                <span id="koinos-percentage">0%</span>
+            </div>
+            <div id="koinos-market-cap">????</div>
+        </div>
+        <br>
+        <hr>
+        <!-- /.koinos price -->
+        <!-- market buttons -->
+        <div id="market-toggle-buttons">
+            <button id="sort-button" class="btn--purple">High/Low
+                <div>
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </button>
+            <button id="sort-volume-button" class="btn--purple">Hot! <i class="fa-solid fa-fire"></i></button>
+        </div>
+        <!-- /.market buttons -->
+        <!-- market -->
+        <table id="crypto-data-table">
+            <!-- Table content will be populated here -->
+        </table>
+        <!-- /.market -->
+        <!-- /.footer -->
+        <footer id="footer">
+            <P>
+                Powered By <a id="koinos-anchor" href="http://koinos.io" target="_blank"
+                    rel="noopener noreferrer">Koinos</a>
+            </P>
+        </footer>
+        <!-- /.footer -->
+    </main>
+    <!-- /.main -->
+    <!-- burger menu -->
+    <nav>
+        <div id="burger-menu" class="menu">
+            <button id="close-button">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+            <div id="logo-container">
+                <div>
+                    <h2 id="burger-logo" class="great-vibes">BlackAdder<i class="fa-solid fa-dragon"></i></h2>
+                </div>
+            </div>
+            <ul>
+                <li><button class="menu-buttons">Account</button></li>
+                <li><button class="menu-buttons" onclick="window.location.href='rewards.html'">Rewards</button></li>
+                <li><button class="menu-buttons no-border" onclick="window.location.href='log-in.html'">Log In</button>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button class="menu-buttons">Notifications</button>
+                </li>
+                <li><button class="menu-buttons">Settings</button></li>
+                <li><button class="menu-buttons">Help Bot</button></li>
+                <li><button class="menu-buttons no-border">Koin Bot</button></li>
+            </ul>
+            <ul>
+                <li>
+                    <button class="menu-buttons" onclick="window.location.href='communities.html'">communities</button>
+                </li>
+                <li>
+                    <button class="menu-buttons">Telegram Accounts</button>
+                </li>
+                <li>
+                    <button class="menu-buttons">X Accounts</button>
+                </li>
+                <li>
+                    <button class="menu-buttons no-border"
+                        onclick="window.location.href='marketing.html'">Marketing</button>
+                </li>
+            </ul>
+            <ul>
+                <li><button class="menu-buttons">Contact</button></li>
+                <li><button class="menu-buttons" onclick="window.location.href='communities.html'">Rate App</button>
+                </li>
+                <li><button class="menu-buttons">Terms & Conditions</button></li>
+                <li><button class="menu-buttons">Privacy Policy</button></li>
+                <li><button class="menu-buttons no-border">Log Out</button></li>
+            </ul>
+            <p id="burger-menu-footer">
+                BlackAdder v1.0.1
+            </p>
+        </div>
+    </nav>
+    <!-- /.burger menu -->
+    <!-- scripts -->
+    <script type="module" src="assets/js/market/market.js"></script>
+    <script src="assets/js/market/koinos-info.js"></script>
+    <script src="assets/js/burger-menu.js"></script>
+    <!-- <script src="assets/js/market/rate-limit.js"></script> -->
+    <!-- <script src="assets/js/market/get-data.js"></script>
+    <script src="assets/js/market/display-data.js"></script> -->
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/73c0fc54c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

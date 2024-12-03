@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/log-in.css">
+</head>
+
+<body class="container">
+    <!-- fixed navbar -->
+    <div id="fixed-nav-div">
+        <div id="add-1-fixed">
+            <a href="marketing.html">Promote your business here</a>
+        </div>
+        <nav id="fixed-nav">
+            <a href="index.html" class="nav-anchors">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p>Deals</p>
+            </a>
+            <a href="spin.html" class="nav-anchors">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <p>Slots</p>
+            </a>
+            <a href="check-in.html" class="nav-anchors">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <p>Check In</p>
+            </a>
+            <a href="market.html" class="nav-anchors">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <p>Market</p>
+            </a>
+        </nav>
+    </div>
+    <!-- /.fixed navbar -->
+    <!-- main -->
+    <main id="main">
+        <!-- header -->
+        <button id="close-button">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+        <div id="logo-container">
+            <div>
+                <h2 id="log-in-logo" class="great-vibes">BlackAdder<i class="fa-solid fa-dragon"></i></h2>
+            </div>
+        </div>
+        <br>
+        <!-- /.header -->
+        <div id="sign-in-container">
+            <form id="signInForm">
+                <h2>Log In</h2>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div id="sign-in-button-container">
+                    <button type="submit" id="log-in-form-button" class="btn--purple">Log In</button>
+                </div>
+                <br>
+                <p id="message"></p>
+            </form>
+            <div id="forgot-signup-div">
+                <a href="">Forgot Password?</a>
+                <a href="sign-up.html">Sign Up</a>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <P>
+                Powered By <a id="koinos-anchor" href="http://koinos.io" target="_blank"
+                    rel="noopener noreferrer">Koinos</a>
+            </P>
+        </footer>
+        <!-- /.footer -->
+    </main>
+    <!-- /.main -->
+    <!-- scripts -->
+    <script src="assets/js/log-in.js"></script>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/73c0fc54c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/burger-menu.css">
+    <link rel="stylesheet" href="assets/css/spin.css">
+</head>
+
+<body class="container">
+    <!-- fixed navbar -->
+    <div id="fixed-nav-div">
+        <div id="add-1-fixed">
+            <a href="marketing.html">Promote your business here</a>
+        </div>
+        <nav id="fixed-nav">
+            <a href="index.html" class="nav-anchors">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p>Deals</p>
+            </a>
+            <a href="spin.html" class="nav-anchors">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <p>Slots</p>
+            </a>
+            <a href="check-in.html" class="nav-anchors">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <p>Check In</p>
+            </a>
+            <a href="market.html" class="nav-anchors">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <p>Market</p>
+            </a>
+        </nav>
+    </div>
+    <!-- /.fixed navbar -->
+    <!-- main -->
+    <main id="main">
+        <!-- top menu -->
+        <div id="top-menu">
+            <a href="" id="tag-credits">
+                <i class="fa-solid fa-apple-whole"></i>
+                <span id="credits-input"></span>
+            </a>
+            <a href="" id="notification-button">
+                <i class="fa-regular fa-bell"></i>
+            </a>
+            <div id="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- /.top menu -->
+        <!-- header -->
+        <div id="logo-container">
+            <div id="logo">
+                <h2 id="black-logo" class="great-vibes">Black<i class="fa-solid fa-dragon"></i></h2>
+                <h2 id="adder-logo" class="great-vibes">Adder</h2>
+            </div>
+        </div>
+        <div id="add-2">
+            <a href="marketing.html">Promote your business here</a>
+        </div>
+        <br>
+        <!-- /.header -->
+        <!-- main section -->
+        <div id="slot-changer-buttons">
+            <button id="monthly-button" class="btn--purple br-left active-button">Monthly Slot</button>
+            <button id="daily-button" class="btn--purple br-right">Daily Slot</button>
+        </div>
+        <div id="master-slot-div">
+            <!-- slot 1 -->
+            <div id="slot-1" class="slot-content active-slot left">
+                <div id="slot-container">
+                    <div id="slot-machine" class="slot-machine">
+                        <div id="reel" class="reel">
+                            <!-- Images will be added here dynamically -->
+                        </div>
+                    </div>
+                    <button id="spin-button" class="btn--purple">Spin!</button>
+                </div>
+                <div id="rewards-board">
+                    <h3>Rewards Board</h3>
+                    <hr>
+                    <ol id="rewards-board-list" reversed>
+                        <!-- List items will be added dynamically -->
+                    </ol>
+                </div>
+            </div>
+            <!-- /.slot 1 -->
+            <!-- slot 2 -->
+            <div id="slot-2" class="slot-content right">
+                <div id="slot-container-2">
+                    <div id="slot-2-img"> 
+                    </div>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+            <!-- /.slot 2 -->
+        </div>
+        <!-- /.main section -->
+        <!-- footer  -->
+        <footer id="footer">
+            <P>
+                Powered By <a id="koinos-anchor" href="http://koinos.io" target="_blank"
+                    rel="noopener noreferrer">Koinos</a>
+            </P>
+        </footer>
+        <!-- /.footer -->
+    </main>
+    <!-- /.main -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="modal-info"></div>
+        </div>
+    </div>
+    <!-- ./The Modal -->
+    <!-- burger menu -->
+    <nav>
+        <div id="burger-menu" class="menu">
+            <button id="close-button">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+            <div id="logo-container">
+                <div>
+                    <h2 id="burger-logo" class="great-vibes">BlackAdder<i class="fa-solid fa-dragon"></i></h2>
+                </div>
+            </div>
+            <ul>
+                <li><button class="menu-buttons">Account</button></li>
+                <li><button class="menu-buttons" onclick="window.location.href='rewards.html'">Rewards</button></li>
+                <li><button class="menu-buttons no-border" onclick="window.location.href='log-in.html'">Log In</button>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button class="menu-buttons">Notifications</button>
+                </li>
+                <li><button class="menu-buttons">Settings</button></li>
+                <li><button class="menu-buttons">Help Bot</button></li>
+                <li><button class="menu-buttons no-border">Koin Bot</button></li>
+            </ul>
+            <ul>
+                <li>
+                    <button class="menu-buttons" onclick="window.location.href='communities.html'">communities</button>
+                </li>
+                <li>
+                    <button class="menu-buttons">Telegram Accounts</button>
+                </li>
+                <li>
+                    <button class="menu-buttons">X Accounts</button>
+                </li>
+                <li>
+                    <button class="menu-buttons no-border"
+                        onclick="window.location.href='marketing.html'">Marketing</button>
+                </li>
+            </ul>
+            <ul>
+                <li><button class="menu-buttons">Contact</button></li>
+                <li><button class="menu-buttons" onclick="window.location.href='communities.html'">Rate App</button>
+                </li>
+                <li><button class="menu-buttons">Terms & Conditions</button></li>
+                <li><button class="menu-buttons">Privacy Policy</button></li>
+                <li><button class="menu-buttons no-border">Log Out</button></li>
+            </ul>
+            <p id="burger-menu-footer">
+                BlackAdder v1.0.1
+            </p>
+        </div>
+    </nav>
+    <!-- /.burger menu -->
+    <!-- scripts -->
+    <script type="module" src="assets/js/slots/spin.js"></script>
+    <script src="assets/js/slots/slot-changer.js"></script>
+    <script src="assets/js/burger-menu.js"></script>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/73c0fc54c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

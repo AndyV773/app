@@ -1,0 +1,65 @@
+/* --------------------------------------Generic styles  */
+
+.price {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 100%;
+}
+
+.volume {
+    font-size: 120%;
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 100%;
+}
+
+.up {
+    color: rgb(74, 252, 19);
+}
+
+.down {
+    color: rgb(255, 3, 3);
+}
+
+.neutral {
+    color: aqua;
+}
+
+/* --------------------------------------Buttons  */
+
+#market-toggle-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#market-toggle-buttons button {
+    font-size: 100%;
+    padding: 5px;
+}
+
+#market-toggle-buttons button:active,
+#market-toggle-buttons button:hover {
+    background-color: #b80bba;
+}
+
+/* --------------------------------------Data table  */
+
+#crypto-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    margin-top: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #ac00e6;
+    padding: 0;
+    color: #fff;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #8c8c8c;
+}
