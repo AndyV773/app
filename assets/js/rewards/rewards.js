@@ -1,11 +1,15 @@
-import {
-    mainUrl,
-    privateKey,
-    koinId,
-} from '../kointract/config.js';
+// import {
+//     mainUrl,
+//     privateKey,
+//     koinId,
+// } from '../kointract/config.js';
 import {
     // rewardsArray
 } from '../slots/slots-data.js'
+
+const mainUrl = "https://api.koinos.io";
+const privateKey = 0;
+const koinId= "15DJN4a8SgrbGhhGksSBASiSYjGnMU8dGL";
 
 // Load from localStorage
 const rewardsArray = JSON.parse(localStorage.getItem('rewardsArray')) || [];
